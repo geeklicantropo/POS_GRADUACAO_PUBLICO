@@ -1,0 +1,38 @@
+# Ignore everything
+*
+
+# Do not ignore directories, so Git will process folder rules below
+!*/
+
+# Do not ignore these specific file types
+!**/*.py
+!**/*.conf
+!**/*.cfg
+!**/*.ini
+!**/*.json
+!**/*.yml
+!**/*.yaml
+!**/*.md
+!**/*.ipynb
+!**/*.zip
+
+# Do not ignore image files
+!**/*.jpg
+!**/*.jpeg
+!**/*.png
+!**/*.gif
+!**/*.bmp
+!**/*.svg
+!**/*.tiff
+!**/*.ico
+
+# Do not ignore document files
+!**/*.doc
+!**/*.docx
+!**/*.ppt
+!**/*.pptx
+
+# Do not ignore the .gitignore file itself
+!.gitignore
+
+# Explicitly ignore these specific folders

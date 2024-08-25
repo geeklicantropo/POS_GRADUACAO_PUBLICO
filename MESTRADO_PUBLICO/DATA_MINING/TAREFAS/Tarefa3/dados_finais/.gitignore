@@ -1,0 +1,35 @@
+# Ignore tudo
+*
+
+# Não ignore diretórios
+!*/
+
+# Não ignore os arquivos especificados
+!**/*.py
+!**/*.conf
+!**/*.cfg
+!**/*.ini
+!**/*.yml
+!**/*.yaml
+!**/*.md
+!**/*.ipynb
+
+# Não ignore arquivos de imagens
+!**/*.jpg
+!**/*.jpeg
+!**/*.png
+!**/*.gif
+!**/*.bmp
+!**/*.svg
+!**/*.tiff
+!**/*.ico
+
+# Não ignore arquivos de documentos
+!**/*.doc
+!**/*.docx
+!**/*.ppt
+!**/*.pptx
+!**/*.pdf
+
+# Não ignore o próprio arquivo .gitignore
+!.gitignore

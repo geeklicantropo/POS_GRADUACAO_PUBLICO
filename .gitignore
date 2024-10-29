@@ -19,7 +19,6 @@
 # Do not ignore image files
 !**/*.jpg
 !**/*.jpeg
-!**/*.png
 !**/*.gif
 !**/*.bmp
 !**/*.svg

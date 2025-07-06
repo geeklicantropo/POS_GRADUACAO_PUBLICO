@@ -466,8 +466,9 @@ def main():
     #Record the start time of dynamic data preprocessing
     dynamic_start_time = time.time()
 
-    #Path to the dynamic CSV file
-    dynamic_csv_path = os.path.join('..', 'dados', 'dynamic', 'top_1000_pe_imports.csv')
+    #Path to the dynamic CSV file using project directory
+    dynamic_dir = os.path.join(project_dir, 'dados', 'dynamic')
+    dynamic_csv_path = os.path.join(dynamic_dir, 'top_1000_pe_imports.csv')
 
     #Check if the CSV file exists
     if not os.path.isfile(dynamic_csv_path):
@@ -476,8 +477,7 @@ def main():
     else:
         logging.info(f"Found dynamic CSV file at {dynamic_csv_path}.")
 
-    #Paths for dynamic data
-    dynamic_dir = os.path.join('..', 'dados', 'dynamic')
+    #Paths for dynamic data using project directory
     dynamic_processed_data_dir = os.path.join(dynamic_dir, 'processed')
     dynamic_treated_data_dir = os.path.join(dynamic_dir, 'treated_data')
 

@@ -3,6 +3,7 @@ import sys
 from torch.utils.data import Dataset
 import h5py
 import numpy as np
+import torch
 
 def setup_logging(log_file):
     """
@@ -49,7 +50,7 @@ class HDF5Dataset(Dataset):
         #Retrieve the sample at the given index
         data = self.data[idx]
         label = self.labels[idx]
-        #Convert data and label to numpy arrays. Important to handle big loads
-        data = np.array(data, dtype=np.float32)
-        label = np.array(label, dtype=np.int64)
+        #Convert data and label to torch tensors for seamless use with DataLoader
+        data = torch.tensor(np.array(data, dtype=np.float32))
+        label = torch.tensor(np.array(label, dtype=np.int64))
         return data, label
